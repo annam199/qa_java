@@ -15,16 +15,16 @@ public class LionTest {
 
     @Test
     public void testLionIsMale () throws Exception {
-        lion = new Lion("Самец", felineMock);
+        Lion lionObj = new Lion("Самец", felineMock);
 
-        assertTrue(lion.doesHaveMane());
+        assertTrue(lionObj.doesHaveMane());
     }
 
     @Test
     public void testLionIsFemale () throws Exception {
-        lion = new Lion("Самка", felineMock);
+        Lion lionObj = new Lion("Самка", felineMock);
 
-        assertFalse(lion.doesHaveMane());
+        assertFalse(lionObj.doesHaveMane());
     }
 
     @Test
@@ -36,6 +36,7 @@ public class LionTest {
 
     @Test
     public void testLionWrongSex() {
+        // не поняла почему в ревью говорится о spy в этом тесте, тут сравнивается какое исключение выбрасывает конструктор класса
         Exception exception = assertThrows(Exception.class, () -> new Lion("Мужчина", felineMock));
         assertEquals("Используйте допустимые значения пола животного - самей или самка", exception.getMessage());
     }

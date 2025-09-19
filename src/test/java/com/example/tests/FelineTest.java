@@ -23,18 +23,19 @@ public class FelineTest {
 
     @Test
     public void testFelineFamily () {
-        assertEquals("Кошачьи", feline.getFamily());
+        Feline felineObj = new Feline();
+        assertEquals("Кошачьи", felineObj.getFamily());
     }
 
     @Test
     public void testFelineKittensDefault () {
-        feline.getKittens();
-        verify(feline).getKittens(1);
+        Feline felineObj = new Feline();
+        assertEquals(1, felineObj.getKittens());
     }
 
     @Test
     public void testFelineKittensProvided () {
-        feline.getKittens(5);
-        verify(feline).getKittens(5);
+        Feline felineObj = new Feline();
+        assertEquals(5, felineObj.getKittens(5));
     }
 }
