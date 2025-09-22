@@ -3,33 +3,44 @@ package com.example.tests;
 import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.mockito.Spy;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
+@RunWith(Parameterized.class)
 public class LionTest {
+    String sex;
+    boolean hasMane;
+
     @Spy
     Lion lion;
     Feline felineMock = mock(Feline.class);
 
-    @Test
-    public void testLionIsMale () throws Exception {
-        Lion lionObj = new Lion("Самец", felineMock);
+    public LionTest(String sex, boolean hasMane) {
+        this.sex = sex;
+        this.hasMane = hasMane;
+    }
 
-        assertTrue(lionObj.doesHaveMane());
+    @Parameterized.Parameters
+    public static Object[][] getParams() {
+        return new Object[][] {
+                {"Самец", true},
+                {"Самка", false}
+        };
     }
 
     @Test
-    public void testLionIsFemale () throws Exception {
-        Lion lionObj = new Lion("Самка", felineMock);
-
-        assertFalse(lionObj.doesHaveMane());
+    public void testLionSex () throws Exception {
+        Lion lionObj = new Lion(this.sex, felineMock);
+        assertEquals(this.hasMane, lionObj.doesHaveMane());
     }
 
     @Test
     public void testLionKittens () throws Exception {
-        lion = new Lion("Самка", felineMock);
+        lion = new Lion(this.sex, felineMock);
         lion.getKittens();
         verify(felineMock).getKittens();
     }
@@ -44,7 +55,7 @@ public class LionTest {
     @Test
     public void testLionFood() throws Exception {
         Feline felineMock = mock(Feline.class);
-        lion = new Lion("Самка", felineMock);
+        lion = new Lion(this.sex, felineMock);
         lion.getFood();
         verify(felineMock).getFood("Хищник");
     }
