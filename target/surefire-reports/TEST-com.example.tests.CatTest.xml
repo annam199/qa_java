@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.tests.CatTest" time="1.637" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/annamamedova/IdeaProjects/qa_java/target/test-classes:/Users/annamamedova/IdeaProjects/qa_java/target/classes:/Users/annamamedova/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.13/jacoco-maven-plugin-0.8.13.jar:/Users/annamamedova/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/annamamedova/.m2/repository/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar:/Users/annamamedova/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/annamamedova/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/annamamedova/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/annamamedova/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm/9.8/asm-9.8.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-core/5.19.0/mockito-core-5.19.0.jar:/Users/annamamedova/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/annamamedova/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.6/byte-buddy-agent-1.17.6.jar:/Users/annamamedova/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-all/2.0.2-beta/mockito-all-2.0.2-beta.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-junit-jupiter/5.19.0/mockito-junit-jupiter-5.19.0.jar:/Users/annamamedova/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.13.4/junit-jupiter-api-5.13.4.jar:/Users/annamamedova/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/annamamedova/.m2/repository/org/junit/platform/junit-platform-commons/1.13.4/junit-platform-commons-1.13.4.jar:/Users/annamamedova/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/annamamedova/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/annamamedova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Asia/Krasnoyarsk"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/annamamedova/IdeaProjects/qa_java/target/surefire/surefirebooter-20250914231009899_3.jar /Users/annamamedova/IdeaProjects/qa_java/target/surefire 2025-09-14T23-10-09_783-jvmRun1 surefire-20250914231009899_1tmp surefire_0-20250914231009899_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/annamamedova/IdeaProjects/qa_java/target/test-classes:/Users/annamamedova/IdeaProjects/qa_java/target/classes:/Users/annamamedova/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.13/jacoco-maven-plugin-0.8.13.jar:/Users/annamamedova/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar:/Users/annamamedova/.m2/repository/org/apache/maven/shared/file-management/3.1.0/file-management-3.1.0.jar:/Users/annamamedova/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/annamamedova/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/annamamedova/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/Users/annamamedova/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.agent/0.8.13/org.jacoco.agent-0.8.13-runtime.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.core/0.8.13/org.jacoco.core-0.8.13.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm/9.8/asm-9.8.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm-commons/9.8/asm-commons-9.8.jar:/Users/annamamedova/.m2/repository/org/ow2/asm/asm-tree/9.8/asm-tree-9.8.jar:/Users/annamamedova/.m2/repository/org/jacoco/org.jacoco.report/0.8.13/org.jacoco.report-0.8.13.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-core/5.19.0/mockito-core-5.19.0.jar:/Users/annamamedova/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/annamamedova/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.6/byte-buddy-agent-1.17.6.jar:/Users/annamamedova/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-all/2.0.2-beta/mockito-all-2.0.2-beta.jar:/Users/annamamedova/.m2/repository/org/mockito/mockito-junit-jupiter/5.19.0/mockito-junit-jupiter-5.19.0.jar:/Users/annamamedova/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.13.4/junit-jupiter-api-5.13.4.jar:/Users/annamamedova/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/annamamedova/.m2/repository/org/junit/platform/junit-platform-commons/1.13.4/junit-platform-commons-1.13.4.jar:/Users/annamamedova/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/annamamedova/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/annamamedova/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/annamamedova"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/annamamedova/IdeaProjects/qa_java"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/annamamedova/IdeaProjects/qa_java/target/surefire/surefirebooter-20250914231009899_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.26+4-LTS"/>
+    <property name="user.name" value="annamamedova"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.26.4.1"/>
+    <property name="localRepository" value="/Users/annamamedova/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/q2/j3nd9p6534lb1y2wc6_v2_d40000gn/T/"/>
+    <property name="idea.version" value="2024.3.7"/>
+    <property name="java.version" value="11.0.26"/>
+    <property name="user.dir" value="/Users/annamamedova/IdeaProjects/qa_java"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/annamamedova/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.26+4-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="testCatSoundMessage" classname="com.example.tests.CatTest" time="1.476"/>
+  <testcase name="testCatEatMeat" classname="com.example.tests.CatTest" time="0.131"/>
+</testsuite>
